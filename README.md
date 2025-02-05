@@ -62,7 +62,7 @@ The API will return a JSON response indicating the validation result:
 ```json
 {
   "valid": true,
-  "result": "REGULAR"
+  "result": "ROYAL"
 }
 ```
 
