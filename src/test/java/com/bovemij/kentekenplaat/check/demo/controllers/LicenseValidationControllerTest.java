@@ -23,7 +23,7 @@ public class LicenseValidationControllerTest {
 	public void testValidateLicensePlate() {
 		final String licensePlate = "123456789";
 
-		licenseValidationController.validateLicensePlate("123456789");
+		licenseValidationController.validateLicensePlate(licensePlate);
 
 		verify(licenseValidationService, times(1)).validateLicense(licensePlate);
 	}
