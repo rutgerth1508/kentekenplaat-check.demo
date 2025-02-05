@@ -12,5 +12,8 @@ public enum LicenseValidationResult {
 	 */
 	DIPLOMATIC,
 
+	/**
+	 * Gewoon
+	 */
 	REGULAR
 }

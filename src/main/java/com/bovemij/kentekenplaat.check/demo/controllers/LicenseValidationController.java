@@ -7,12 +7,23 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Rest controller for validating Dutch license plates
+ */
+
 @RestController
 public class LicenseValidationController {
 
 	@Autowired
 	private LicenseValidationService licenseValidationService;
 
+	/**
+	 * GET request for validating the license plate
+	 *
+	 * @param licensePlate
+	 * 		The string license plate
+	 * @return The license validation response object
+	 */
 	@GetMapping("/api/license-plates/{licensePlate}/validate")
 	public LicenseValidationResponse validateLicensePlate(@PathVariable final String licensePlate) {
 		return licenseValidationService.validateLicense(licensePlate);
