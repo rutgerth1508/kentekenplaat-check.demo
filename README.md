@@ -74,4 +74,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [Spring Boot](https://spring.io/projects/spring-boot)
 - [Apache Commons Lang](https://commons.apache.org/proper/commons-lang/)
-```
